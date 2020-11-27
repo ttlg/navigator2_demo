@@ -157,8 +157,6 @@ class DetailScreen extends StatelessWidget {
               child: Text('Pop!', style: TextStyle(fontSize: 50)),
               onPressed: () {
                 Navigator.pop(context);
-                (Router.of(context).routerDelegate as MyRouterDelegate)
-                    .currentRoute = MyRoute(MyPath.details, id: 1);
               },
             ),
           ],
